@@ -23,18 +23,16 @@
 - 依赖安装：  libpcap（数据包捕获函数库）
 
 ```
-  apt-get install libpcap-dev
-  OR
-  apt-get install tcpdump     
+ yum install libpcap-devel
+ yum install tcpdump
 ```
-
 
 - libNetGo 源码安装
 
 ```
   go get github.com/gotoolkits/libnetgo 
   cd $GOPATH/src/github.com/gotoolkits/libnetgo
-  go build libnet.go
+  go build -o libnetgo libnet.go
 ```
 
 >  执行参数说明
